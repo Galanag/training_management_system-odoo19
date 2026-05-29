@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_skill_assignment_tree" model="ir.ui.view">
+        <field name="name">skill.assignment.tree</field>
+        <field name="model">skill.assignment</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="student_id"/>
+                <field name="due_date"/>
+                <field name="state"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_skill_assignment_form" model="ir.ui.view">
+        <field name="name">skill.assignment.form</field>
+        <field name="model">skill.assignment</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="student_id"/>
+                        <field name="instructor_id"/>
+                        <field name="due_date"/>
+                        <field name="description"/>
+                        <field name="state"/>
+                        <field name="grade"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

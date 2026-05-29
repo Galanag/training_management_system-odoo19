@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- ========== ACTIONS ========== -->
+    <record id="action_skill_student" model="ir.actions.act_window">
+        <field name="name">Students</field>
+        <field name="res_model">skill.student</field>
+        <field name="view_mode">list,kanban,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create your first student</p>
+        </field>
+    </record>
+
+    <record id="action_skill_instructor" model="ir.actions.act_window">
+        <field name="name">Instructors</field>
+        <field name="res_model">skill.instructor</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <record id="action_skill_bootcamp" model="ir.actions.act_window">
+        <field name="name">Bootcamps</field>
+        <field name="res_model">skill.bootcamp</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <record id="action_skill_batch" model="ir.actions.act_window">
+        <field name="name">Batches</field>
+        <field name="res_model">skill.batch</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <record id="action_skill_session" model="ir.actions.act_window">
+        <field name="name">Sessions</field>
+        <field name="res_model">skill.session</field>
+        <field name="view_mode">list,calendar,graph,form</field>
+    </record>
+
+    <record id="action_skill_assignment" model="ir.actions.act_window">
+        <field name="name">Assignments</field>
+        <field name="res_model">skill.assignment</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <record id="action_skill_attendance" model="ir.actions.act_window">
+        <field name="name">Attendance</field>
+        <field name="res_model">skill.attendance</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <record id="action_skill_dashboard" model="ir.actions.act_window">
+        <field name="name">Dashboard</field>
+        <field name="res_model">skill.dashboard</field>
+        <field name="view_mode">form</field>
+        <field name="target">main</field>
+    </record>
+
+    <!-- ========== MENU ========== -->
+    <menuitem id="menu_skillbridge_root" name="SkillBridge" sequence="10"/>
+    <menuitem id="menu_skillbridge_students" name="Students" parent="menu_skillbridge_root" action="action_skill_student"/>
+    <menuitem id="menu_skillbridge_instructors" name="Instructors" parent="menu_skillbridge_root" action="action_skill_instructor"/>
+    <menuitem id="menu_skillbridge_bootcamps" name="Bootcamps" parent="menu_skillbridge_root" action="action_skill_bootcamp"/>
+    <menuitem id="menu_skillbridge_batches" name="Batches" parent="menu_skillbridge_root" action="action_skill_batch"/>
+    <menuitem id="menu_skillbridge_sessions" name="Sessions" parent="menu_skillbridge_root" action="action_skill_session"/>
+    <menuitem id="menu_skillbridge_assignments" name="Assignments" parent="menu_skillbridge_root" action="action_skill_assignment"/>
+    <menuitem id="menu_skillbridge_attendance" name="Attendance" parent="menu_skillbridge_root" action="action_skill_attendance"/>
+    <menuitem id="menu_skillbridge_dashboard" name="Dashboard" parent="menu_skillbridge_root" action="action_skill_dashboard" sequence="1"/>
+</odoo>

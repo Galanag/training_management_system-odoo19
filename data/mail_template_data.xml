@@ -1,0 +1,14 @@
+<odoo>
+    <data noupdate="1">
+        <record id="email_template_session_reminder" model="mail.template">
+            <field name="name">Session Reminder</field>
+            <field name="model_id" ref="model_skill_session"/>
+            <field name="subject">Reminder: Session {{ object.name }} starts soon</field>
+            <field name="body_html"><![CDATA[
+                <p>Dear Instructor/Student,</p>
+                <p>The session <strong>{{ object.name }}</strong> will start at {{ object.start_datetime }}.</p>
+                <p>Location: {{ object.room }}</p>
+            ]]></field>
+        </record>
+    </data>
+</odoo>

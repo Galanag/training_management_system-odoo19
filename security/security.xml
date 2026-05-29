@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="module_skill_category" model="ir.module.category">
+        <field name="name">SkillBridge</field>
+        <field name="description">SkillBridge Training Management</field>
+        <field name="sequence">10</field>
+    </record>
+
+    <record id="group_skill_user" model="res.groups">
+        <field name="name">SkillBridge User</field>
+        <!-- category_id removed to avoid error -->
+    </record>
+
+    <record id="group_skill_manager" model="res.groups">
+        <field name="name">SkillBridge Manager</field>
+        <field name="implied_ids" eval="[(4, ref('group_skill_user'))]"/>
+        <!-- category_id removed -->
+    </record>
+</odoo>

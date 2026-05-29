@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_skill_instructor_tree" model="ir.ui.view">
+        <field name="name">skill.instructor.tree</field>
+        <field name="model">skill.instructor</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="email"/>
+                <field name="phone"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_skill_instructor_form" model="ir.ui.view">
+        <field name="name">skill.instructor.form</field>
+        <field name="model">skill.instructor</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="instructor_code"/>
+                        <field name="email"/>
+                        <field name="phone"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

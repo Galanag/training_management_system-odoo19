@@ -1,0 +1,17 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_skill_student_user,skill.student.user,model_skill_student,group_skill_user,1,1,0,0
+access_skill_student_manager,skill.student.manager,model_skill_student,group_skill_manager,1,1,1,1
+access_skill_instructor_user,skill.instructor.user,model_skill_instructor,group_skill_user,1,1,0,0
+access_skill_instructor_manager,skill.instructor.manager,model_skill_instructor,group_skill_manager,1,1,1,1
+access_skill_bootcamp_user,skill.bootcamp.user,model_skill_bootcamp,group_skill_user,1,1,0,0
+access_skill_bootcamp_manager,skill.bootcamp.manager,model_skill_bootcamp,group_skill_manager,1,1,1,1
+access_skill_batch_user,skill.batch.user,model_skill_batch,group_skill_user,1,1,0,0
+access_skill_batch_manager,skill.batch.manager,model_skill_batch,group_skill_manager,1,1,1,1
+access_skill_session_user,skill.session.user,model_skill_session,group_skill_user,1,1,0,0
+access_skill_session_manager,skill.session.manager,model_skill_session,group_skill_manager,1,1,1,1
+access_skill_assignment_user,skill.assignment.user,model_skill_assignment,group_skill_user,1,1,0,0
+access_skill_assignment_manager,skill.assignment.manager,model_skill_assignment,group_skill_manager,1,1,1,1
+access_skill_attendance_user,skill.attendance.user,model_skill_attendance,group_skill_user,1,1,0,0
+access_skill_attendance_manager,skill.attendance.manager,model_skill_attendance,group_skill_manager,1,1,1,1
+access_skill_dashboard_user,skill.dashboard.user,model_skill_dashboard,group_skill_user,1,0,0,0
+access_skill_dashboard_manager,skill.dashboard.manager,model_skill_dashboard,group_skill_manager,1,1,1,1

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_skill_session_tree" model="ir.ui.view">
+        <field name="name">skill.session.tree</field>
+        <field name="model">skill.session</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="batch_id"/>
+                <field name="instructor_id"/>
+                <field name="start_datetime"/>
+                <field name="state"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_skill_session_form" model="ir.ui.view">
+        <field name="name">skill.session.form</field>
+        <field name="model">skill.session</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="batch_id"/>
+                        <field name="instructor_id"/>
+                        <field name="start_datetime"/>
+                        <field name="end_datetime"/>
+                        <field name="room"/>
+                        <field name="state"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_skill_session_calendar" model="ir.ui.view">
+        <field name="name">skill.session.calendar</field>
+        <field name="model">skill.session</field>
+        <field name="arch" type="xml">
+            <calendar string="Sessions" date_start="start_datetime" date_stop="end_datetime" color="instructor_id">
+                <field name="name"/>
+            </calendar>
+        </field>
+    </record>
+
+    <record id="view_skill_session_graph" model="ir.ui.view">
+        <field name="name">skill.session.graph</field>
+        <field name="model">skill.session</field>
+        <field name="arch" type="xml">
+            <graph type="bar">
+                <field name="start_datetime" interval="month"/>
+                <field name="state"/>
+            </graph>
+        </field>
+    </record>
+</odoo>
