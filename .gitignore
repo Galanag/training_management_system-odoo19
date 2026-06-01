@@ -1,0 +1,27 @@
+# Python
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+
+# Odoo
+*.db
+*.log
+*.pid
+*.conf
+*.odoo
+*.~
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Backup
+*.bak
+*.orig
+*.tmp
