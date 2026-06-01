@@ -20,6 +20,7 @@
         'views/assignment_views.xml',
         'views/attendance_views.xml',
         'views/dashboard_views.xml',
+        'data/sequence.xml', 
     ],
     # 'assets': {   # COMMENTED OUT TO AVOID STYLE ERRORS
     #     'web.assets_backend': [
