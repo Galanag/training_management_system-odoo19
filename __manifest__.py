@@ -21,7 +21,13 @@
         'views/attendance_views.xml',
         'views/dashboard_views.xml',
         'data/sequence.xml', 
+        'views/dashboard_template.xml',
     ],
+    'assets': {
+    'web.assets_backend': [
+        'training_ms/static/src/scss/skillbridge.scss',
+    ],
+},
     # 'assets': {   # COMMENTED OUT TO AVOID STYLE ERRORS
     #     'web.assets_backend': [
     #         'skillbridge/static/src/js/dashboard.js',

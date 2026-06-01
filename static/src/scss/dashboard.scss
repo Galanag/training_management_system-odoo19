@@ -1,0 +1,62 @@
+// Scoped only inside .skill-dashboard
+.skill-dashboard {
+    padding: 20px;
+
+    .dashboard-header {
+        margin-bottom: 24px;
+        h1 { font-size: 24px; font-weight: 600; color: #1e2a3a; }
+        p { color: #6c757d; margin: 0; }
+    }
+
+    .stat-card {
+        background: white;
+        border-radius: 16px;
+        padding: 20px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        text-align: center;
+        transition: transform 0.2s;
+        &:hover { transform: translateY(-2px); }
+        .stat-value { font-size: 36px; font-weight: 700; color: #2e7d32; }
+        .stat-label { font-size: 14px; color: #6c757d; margin-top: 8px; }
+    }
+
+    .dashboard-card {
+        background: white;
+        border-radius: 16px;
+        padding: 20px;
+        margin-bottom: 24px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        h3 { font-size: 18px; font-weight: 600; margin-bottom: 16px; }
+    }
+
+    .progress-item {
+        margin-bottom: 16px;
+        .progress-label {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 6px;
+            font-size: 14px;
+        }
+        .progress {
+            height: 8px;
+            border-radius: 4px;
+            background: #e9ecef;
+        }
+        .progress-bar {
+            border-radius: 4px;
+            background-color: #2e7d32;
+        }
+    }
+
+    .alerts-feed {
+        .alert-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid #e9ecef;
+            .alert-type { font-size: 12px; margin-right: 8px; }
+            .alert-time { font-size: 12px; color: #6c757d; }
+        }
+    }
+}

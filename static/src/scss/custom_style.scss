@@ -1,0 +1,84 @@
+// SkillBridge Custom Theme – Green & Vector Background
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+}
+// Background for the whole backend (body)
+.o_web_client {
+    background: #e8f5e9 url('/training_ms/static/src/img/bg-vector.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+// Primary colour overrides (green)
+:root {
+    --primary: #2e7d32;
+    --primary-dark: #1b5e20;
+    --primary-light: #4caf50;
+}
+
+// Navbar
+.o_main_navbar {
+    background: linear-gradient(135deg, #1b5e20, #2e7d32);
+    border-bottom: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+// Buttons
+.btn-primary {
+    background-color: #2e7d32;
+    border-color: #1b5e20;
+    &:hover {
+        background-color: #1b5e20;
+        border-color: #0a3a0e;
+    }
+}
+
+// Cards, panels, and sheets
+.o_form_sheet {
+    background-color: rgba(255,255,255,0.95);
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 24px;
+}
+
+.card {
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+// List view rows
+.o_data_row:hover {
+    background-color: #f1f8e9;
+}
+
+.o_kanban_record {
+    border-left: 4px solid #4caf50;
+}
+
+// Status bar
+.o_statusbar_status {
+    .badge {
+        background-color: #4caf50;
+        color: white;
+    }
+}
+
+// Only apply to models starting with 'skill.'
+.model-skill_student .o_form_sheet {
+    background: #f0f7f0;
+}
+
+// Sidebar menu (apps menu)
+.o_menu_sections {
+    .o_menu_entry {
+        &:hover {
+            background: rgba(46,125,50,0.1);
+        }
+        &.active {
+            background: #2e7d32;
+            color: white;
+        }
+    }
+}

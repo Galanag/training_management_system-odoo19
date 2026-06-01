@@ -1,0 +1,89 @@
+/* ==================== SKILLBRIDGE MODULE STYLES ==================== */
+/* Only apply when viewing SkillBridge models or dashboard */
+
+/* Green background for all SkillBridge pages */
+.o_model_skill_student .o_content,
+.o_model_skill_instructor .o_content,
+.o_model_skill_bootcamp .o_content,
+.o_model_skill_batch .o_content,
+.o_model_skill_session .o_content,
+.o_model_skill_assignment .o_content,
+.o_model_skill_attendance .o_content,
+.o_model_skill_dashboard .o_content {
+    background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+    padding: 20px;
+    border-radius: 16px;
+}
+
+/* Dashboard stat cards */
+.skill-dashboard .stat-card {
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+.skill-dashboard .stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+}
+.skill-dashboard .stat-icon {
+    font-size: 48px;
+    margin-bottom: 12px;
+    display: inline-block;
+}
+.skill-dashboard .stat-value {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 10px 0 5px;
+}
+.skill-dashboard .stat-label {
+    font-size: 14px;
+    color: #6c757d;
+    font-weight: 500;
+}
+/* Card color variants */
+.skill-dashboard .stat-card-blue {
+    border-top: 4px solid #2196f3;
+}
+.skill-dashboard .stat-card-blue .stat-icon,
+.skill-dashboard .stat-card-blue .stat-value {
+    color: #2196f3;
+}
+.skill-dashboard .stat-card-green {
+    border-top: 4px solid #4caf50;
+}
+.skill-dashboard .stat-card-green .stat-icon,
+.skill-dashboard .stat-card-green .stat-value {
+    color: #4caf50;
+}
+.skill-dashboard .stat-card-orange {
+    border-top: 4px solid #ff9800;
+}
+.skill-dashboard .stat-card-orange .stat-icon,
+.skill-dashboard .stat-card-orange .stat-value {
+    color: #ff9800;
+}
+.skill-dashboard .stat-card-purple {
+    border-top: 4px solid #9c27b0;
+}
+.skill-dashboard .stat-card-purple .stat-icon,
+.skill-dashboard .stat-card-purple .stat-value {
+    color: #9c27b0;
+}
+
+/* Page title and header */
+.skill-dashboard .dashboard-header {
+    margin-bottom: 24px;
+}
+.skill-dashboard .dashboard-header h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #1b5e20;
+}
+.skill-dashboard .dashboard-header p {
+    color: #2e7d32;
+}

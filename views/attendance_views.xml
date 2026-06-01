@@ -29,4 +29,23 @@
             </form>
         </field>
     </record>
+        <record id="skill_attendance_graph" model="ir.ui.view">
+        <field name="name">attendance.graph</field>
+        <field name="model">skill.attendance</field>
+        <field name="arch" type="xml">
+            <graph type="bar">
+                <field name="status"/>
+                <field name="date" interval="day"/>
+            </graph>
+        </field>
+    </record>
+
+    <record id="action_skill_attendance_graph" model="ir.actions.act_window">
+        <field name="name">Attendance Graph</field>
+        <field name="res_model">skill.attendance</field>
+        <field name="view_mode">graph</field>
+        <field name="view_id" ref="skill_attendance_graph"/>
+    </record>
+
+    <menuitem id="menu_skill_attendance_graph" name="Attendance Stats" parent="menu_skillbridge_root" action="action_skill_attendance_graph" sequence="50"/>
 </odoo>

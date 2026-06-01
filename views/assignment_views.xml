@@ -32,4 +32,24 @@
             </form>
         </field>
     </record>
+        <record id="skill_assignment_pivot" model="ir.ui.view">
+        <field name="name">assignment.pivot</field>
+        <field name="model">skill.assignment</field>
+        <field name="arch" type="xml">
+            <pivot>
+                <field name="state" type="col"/>
+                <field name="instructor_id" type="row"/>
+                <field name="grade" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+
+    <record id="action_skill_assignment_pivot" model="ir.actions.act_window">
+        <field name="name">Assignment Report</field>
+        <field name="res_model">skill.assignment</field>
+        <field name="view_mode">pivot</field>
+        <field name="view_id" ref="skill_assignment_pivot"/>
+    </record>
+
+    <menuitem id="menu_skill_assignment_pivot" name="Assignment Pivot" parent="menu_skillbridge_root" action="action_skill_assignment_pivot" sequence="51"/>
 </odoo>

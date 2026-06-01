@@ -15,4 +15,4 @@ class SkillDashboard(models.TransientModel):
             rec.total_students = self.env['skill.student'].search_count([])
             rec.total_instructors = self.env['skill.instructor'].search_count([])
             rec.total_bootcamps = self.env['skill.bootcamp'].search_count([])
-            rec.ongoing_sessions = self.env['skill.session'].search_count([('state', '=', 'in_progress')])
+            rec.ongoing_sessions = self.env['skill.session'].search_count([('start_datetime', '>=', fields.Datetime.now()), ('state', '!=', 'done')])

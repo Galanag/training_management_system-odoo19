@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="skill_dashboard_view" name="SkillBridge Dashboard">
+        <t t-call="web.basic_layout">
+            <div class="skill-dashboard">
+                <div class="dashboard-header">
+                    <h1>Training Management Dashboard</h1>
+                    <p>Real-time metrics · <span t-esc="fields.Datetime.now().strftime('%H:%M:%S')"/></p>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="stat-card stat-card-blue">
+                            <i class="fa fa-users stat-icon"></i>
+                            <div class="stat-value"><t t-esc="total_students"/></div>
+                            <div class="stat-label">Total Students</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="stat-card stat-card-green">
+                            <i class="fa fa-chalkboard-teacher stat-icon"></i>
+                            <div class="stat-value"><t t-esc="total_instructors"/></div>
+                            <div class="stat-label">Total Instructors</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="stat-card stat-card-orange">
+                            <i class="fa fa-laptop-code stat-icon"></i>
+                            <div class="stat-value"><t t-esc="total_bootcamps"/></div>
+                            <div class="stat-label">Total Bootcamps</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="stat-card stat-card-purple">
+                            <i class="fa fa-calendar-check stat-icon"></i>
+                            <div class="stat-value"><t t-esc="ongoing_sessions"/></div>
+                            <div class="stat-label">Ongoing Sessions</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+</odoo>
