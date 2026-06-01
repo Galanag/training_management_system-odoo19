@@ -15,6 +15,10 @@ A complete Training Institute ERP built on Odoo 19 – manage students, instruct
 - **Automated Reminders** – email notifications for upcoming sessions (cron job)
 - **Multi‑company Ready** – branch isolation via security groups
 
+### Screenshot of Systme
+<img width="1856" height="996" alt="image" src="https://github.com/user-attachments/assets/34d0f68f-a284-4970-835f-2de04789f0fa" />
+
+
 ## Installation
 
 1. Copy the `training_ms` folder into your Odoo `custom-addons` directory.
